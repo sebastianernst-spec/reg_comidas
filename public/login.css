@@ -1,0 +1,157 @@
+---
+name: Educational Management System
+colors:
+  surface: '#f6f9ff'
+  surface-dim: '#d4dbe3'
+  surface-bright: '#f6f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eef4fd'
+  surface-container: '#e8eef7'
+  surface-container-high: '#e2e9f1'
+  surface-container-highest: '#dce3ec'
+  on-surface: '#151c22'
+  on-surface-variant: '#444654'
+  inverse-surface: '#2a3138'
+  inverse-on-surface: '#ebf1fa'
+  outline: '#747686'
+  outline-variant: '#c4c5d7'
+  surface-tint: '#2a50d8'
+  primary: '#274ed5'
+  on-primary: '#ffffff'
+  primary-container: '#4669f0'
+  on-primary-container: '#fffbff'
+  inverse-primary: '#b8c4ff'
+  secondary: '#006b54'
+  on-secondary: '#ffffff'
+  secondary-container: '#77f9d0'
+  on-secondary-container: '#007259'
+  tertiary: '#7b5500'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#9b6c00'
+  on-tertiary-container: '#fffbff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dde1ff'
+  primary-fixed-dim: '#b8c4ff'
+  on-primary-fixed: '#001355'
+  on-primary-fixed-variant: '#0036bc'
+  secondary-fixed: '#77f9d0'
+  secondary-fixed-dim: '#58dcb5'
+  on-secondary-fixed: '#002117'
+  on-secondary-fixed-variant: '#00513e'
+  tertiary-fixed: '#ffdeac'
+  tertiary-fixed-dim: '#ffba37'
+  on-tertiary-fixed: '#281900'
+  on-tertiary-fixed-variant: '#604100'
+  background: '#f6f9ff'
+  on-background: '#151c22'
+  surface-variant: '#dce3ec'
+typography:
+  display-lg:
+    fontFamily: Lexend
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: '1.2'
+  headline-md:
+    fontFamily: Lexend
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: '1.3'
+  title-sm:
+    fontFamily: Lexend
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: '1.4'
+  body-md:
+    fontFamily: Lexend
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: '1.6'
+  label-sm:
+    fontFamily: Lexend
+    fontSize: 13px
+    fontWeight: '500'
+    lineHeight: '1.0'
+    letterSpacing: 0.02em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  base: 8px
+  xs: 4px
+  sm: 12px
+  md: 24px
+  lg: 48px
+  xl: 80px
+  gutter: 24px
+  margin: 32px
+---
+
+## Brand & Style
+
+The visual identity of this design system centers on the intersection of academic rigor and empathetic accessibility. It is designed to serve a dual audience: administrative staff requiring high-density information management and parents/students seeking clarity and reassurance.
+
+The style follows a **Modern Corporate** aesthetic with **Minimalist** influences. By prioritizing generous white space and a restricted color palette, the system reduces cognitive load—essential in high-stakes educational environments. The interface conveys "efficiency without coldness," utilizing soft geometry to humanize the data-driven nature of school management.
+
+## Colors
+
+The palette is anchored by an **Institutional Blue**, specifically calibrated to feel authoritative yet vibrant, avoiding the dullness of traditional government interfaces. 
+
+- **Primary (Institutional Blue):** Used for navigation, primary actions, and brand reinforcement.
+- **Secondary (Mint Green):** Reserved for health-related alerts, cafeteria menus, and positive progress indicators.
+- **Background & Surface:** High-brightness whites and subtle grays create a "Clean Paper" feel, ensuring that content remains the focal point.
+- **Status Tones:** Softened versions of red (absences) and amber (pending tasks) are used to maintain the "friendly" promise while communicating urgency.
+
+## Typography
+
+**Lexend** is the exclusive typeface for this design system. Originally designed to improve reading fluency, its expanded character spacing and unique letterforms make it ideal for educational contexts, particularly for younger students or users with diverse processing needs.
+
+Headlines utilize a semi-bold weight to establish clear hierarchy without appearing aggressive. Body text maintains a generous line height (1.6) to ensure long-form reports and messages are comfortable to read on both desktop and mobile devices.
+
+## Layout & Spacing
+
+This design system utilizes a **12-column fluid grid** for desktop and a **4-column grid** for mobile. The layout philosophy is built on an **8px linear scale**, ensuring consistent vertical rhythm across all views.
+
+The spacing model prioritizes "breathing room." Large containers (cards) should use `md` (24px) internal padding, while section groupings use `lg` (48px) to separate distinct functional areas (e.g., separating Grade Reports from Attendance Logs). Margins are wide to prevent the interface from feeling cramped or overwhelming during data entry.
+
+## Elevation & Depth
+
+To maintain the professional and clean aesthetic, this design system avoids heavy shadows. Depth is communicated through **Tonal Layering** and **Ambient Softness**:
+
+1.  **Canvas:** The lowest level, utilizing the base background color.
+2.  **Surface:** Main content containers (cards) use a pure white background with a very thin, light gray stroke (#E9ECEF).
+3.  **Elevation:** Use a single, highly diffused shadow style (15% opacity of the primary blue) only for interactive elements like floating action buttons or active modals. 
+
+This approach creates a "stacked paper" effect that feels tactile and organized.
+
+## Shapes
+
+The shape language is defined by **Soft Roundedness**. A base radius of `0.5rem` (8px) is applied to standard buttons, input fields, and small UI components. 
+
+Larger containers, such as dashboard widgets and modals, utilize `1rem` (16px) to reinforce the friendly and modern personality of the application. This curvature removes the "sharpness" often associated with cold institutional software, making the management experience feel more inviting and less intimidating for users.
+
+## Components
+
+### Buttons & Navigation
+- **Primary Button:** Solid Blue background, white text, 8px radius.
+- **Secondary Button:** White background, Blue stroke, Blue text.
+- **Ghost Action:** No background, Blue text; used for secondary navigation or "Cancel" actions.
+
+### Data & Inputs
+- **Input Fields:** 8px radius with a subtle 1px stroke. Labels are always persistent above the field in `label-sm` style.
+- **Chips:** Used for "Subjects" (e.g., Mathematics, History). High-contrast background with rounded-pill shapes.
+- **Health/Cafeteria Chips:** Utilize the Mint Green palette to distinguish them from academic data.
+
+### Containers
+- **Cards:** White background, 16px radius, subtle stroke. Used to encapsulate student profiles or class summaries.
+- **Progress Bars:** Thick, rounded tracks. Completed segments use Mint Green for positive reinforcement.
+
+### Specialized Components
+- **Attendance Toggle:** A large, tactile switch that uses Mint Green for "Present" and a soft Red for "Absent."
+- **Grade Badges:** Circular containers with semi-bold typography to highlight academic performance clearly.
