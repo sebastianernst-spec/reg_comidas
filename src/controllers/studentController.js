@@ -1,7 +1,7 @@
 // src/controllers/studentController.js
-
+const path = require('path');
 exports.listStudents = (req, res) => {
-    res.send("Aquí se verá la lista de alumnos próximamente");
+    res.sendFile(path.join(__dirname, '../list.html'));
 };
 
 exports.createStudent = (req, res) => {

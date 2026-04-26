@@ -128,28 +128,33 @@
 <h2 class="font-headline-md text-title-sm text-on-background">Bienvenido de nuevo</h2>
 <p class="font-label-sm text-on-surface-variant mt-xs">Ingresa tus credenciales para continuar</p>
 </div>
-<form class="flex flex-col gap-md">
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-on-surface-variant ml-xs" for="email">Correo electrónico</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="mail">mail</span>
-<input class="w-full pl-12 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none font-body-md text-on-surface" id="email" placeholder="nombre@colegio.edu" type="email"/>
-</div>
-</div>
-<div class="flex flex-col gap-xs">
-<label class="font-label-sm text-on-surface-variant ml-xs" for="password">Contraseña</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="lock">lock</span>
-<input class="w-full pl-12 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none font-body-md text-on-surface" id="password" placeholder="••••••••" type="password"/>
-</div>
-</div>
-<div class="flex justify-end">
-<a class="font-label-sm text-primary hover:underline transition-all" href="#">¿Olvidaste tu contraseña?</a>
-</div>
-<button class="w-full bg-primary text-white py-4 rounded-xl font-title-sm text-body-md hover:bg-primary/90 active:scale-[0.98] transition-all shadow-md shadow-primary/20" type="submit">
-          Iniciar Sesión
-        </button>
-</form>
+<form class="flex flex-col gap-md" action="/auth/login" method="POST">
+  
+  <div class="flex flex-col gap-xs">
+    <label class="font-label-sm text-on-surface-variant ml-xs" for="email">Correo electrónico</label>
+    <div class="relative">
+      <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="mail">mail</span>
+      <input name="email" class="w-full pl-12 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none font-body-md text-on-surface" id="email" placeholder="nombre@colegio.edu" type="email"/>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-xs">
+    <label class="font-label-sm text-on-surface-variant ml-xs" for="password">Contraseña</label>
+    <div class="relative">
+      <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" data-icon="lock">lock</span>
+      <input name="password" class="w-full pl-12 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none font-body-md text-on-surface" id="password" placeholder="••••••••" type="password"/>
+    </div>
+  </div>
+
+  <div class="flex justify-end">
+    <a class="font-label-sm text-primary hover:underline transition-all" href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+    <button class="w-full bg-primary text-white py-4 rounded-xl font-title-sm text-body-md hover:bg-primary/90 active:scale-[0.98] transition-all shadow-md shadow-primary/20" type="submit">
+              Iniciar Sesión
+            </button>
+  
+
+  </form>
 <div class="mt-md flex items-center gap-sm">
 <div class="h-px bg-outline-variant flex-1"></div>
 <span class="font-label-sm text-outline">O ingresa con</span>

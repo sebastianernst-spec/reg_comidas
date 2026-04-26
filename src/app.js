@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Uso de los módulos
 app.use('/auth', authRoutes);
-//app.use('/students', studentRoutes);
+//app.use('/', studentRoutes);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -26,6 +26,10 @@ app.set('views', path.join(__dirname, 'views'));
 // Si decidiste usar HTML simple:
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/login.html'));
+});
+
+app.get('/list', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/list.html'));
 });
 
 app.listen(PORT, () => {

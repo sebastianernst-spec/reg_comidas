@@ -21,7 +21,7 @@ exports.login = async (req, res) => {
 
         if (email === "profe@colegio.cl" && password === "1234") {
             // Si es correcto, redirigimos al dashboard de alumnos
-            return res.redirect('/students/list');
+            return res.redirect('/list');
         } else {
             // Si falla, volvemos a cargar el login con un mensaje
             return res.render('login', { error: "Credenciales incorrectas" });
