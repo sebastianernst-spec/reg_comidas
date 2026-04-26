@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 //app.set('view engine', 'stitch'); // O el nombre del motor que estés usando
 
 // Configuración para que el diseño se vea bien (CSS, Imágenes)
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Si decidiste usar HTML simple:
 app.get('/login', (req, res) => {
